@@ -1,8 +1,7 @@
-import PageNav from "../components/PageNav.jsx";
-
 export default function PageNotFound() {
-    return <div>
-        <PageNav/>
-        Not found :(
+  return (
+    <div>
+      <h1>Page not found 😢</h1>
     </div>
+  );
 }
