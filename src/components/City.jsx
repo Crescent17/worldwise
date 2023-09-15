@@ -1,5 +1,5 @@
 import {useParams, useSearchParams} from "react-router-dom";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 import {useCities} from "../contexts/CitiesContext.jsx";
 import styles from './City.module.css'
 import Spinner from "./Spinner.jsx";
@@ -25,7 +25,7 @@ function City() {
 
     useEffect(() => {
         getCity(id)
-    }, [id]);
+    }, [getCity, id]);
 
     if (isLoading) return <Spinner/>
     return (
